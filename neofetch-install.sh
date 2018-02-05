@@ -1,28 +1,26 @@
 #!/bin/bash
 #
 ##################################################################################################################
-# Written to be used on 64 bits computers
-# Author 	: 	Erik Dubois
-# Website 	: 	http://www.erikdubois.be
-##################################################################################################################
-##################################################################################################################
 #
-#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
+#   Kullanıcı oluşabilecek tüm sorunlarda sorumludur.
 #
 ##################################################################################################################
 
 
 
-# repo for spotify
+# repo dosyasını ekle
+echo "# Repo sisteme ekleniyor"
 
 sudo add-apt-repository -y ppa:dawidd0811/neofetch
 
-# getting new info of this new repo
+# eklenen repo'nun güncellenmesi
+echo "# Yüklenen repo güncelleniyor"
+
 sudo apt-get -y update
 
-# installing
+# Yükleme Komutu
+echo "# Yükleniyor"
+
 sudo apt install neofetch -y
 
-echo "################################################################"
-echo "###################    T H E   E N D      ######################"
 echo "################################################################"
